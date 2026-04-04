@@ -1,0 +1,112 @@
+.product-tabs {
+  margin-top: 8px;
+}
+
+.product-tabs__bar {
+  display: flex;
+  gap: 28px;
+  border-bottom: 1px solid var(--df-border);
+  margin-bottom: 24px;
+}
+
+.product-tabs__tab {
+  position: relative;
+  padding: 12px 0 14px;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--df-text-muted);
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.product-tabs__tab:hover {
+  color: var(--df-text);
+}
+
+.product-tabs__tab.is-active {
+  color: var(--df-brown-dark);
+}
+
+.product-tabs__tab.is-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient(90deg, var(--df-cta), var(--df-gold));
+}
+
+.product-tabs__panel {
+  position: relative;
+}
+
+.product-tabs__card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px 32px;
+  border: 1px solid var(--df-border);
+  box-shadow: 0 20px 56px rgba(61, 40, 23, 0.08);
+  animation: product-tabs-fade 0.35s ease;
+}
+
+@keyframes product-tabs-fade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-tabs__card {
+    animation: none;
+  }
+}
+
+.product-tabs__card-heading {
+  margin: 0 0 16px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--df-text);
+}
+
+.product-tabs__card p {
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--df-text-muted);
+}
+
+.product-tabs__card p:last-child {
+  margin-bottom: 0;
+}
+
+.product-tabs__list {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--df-text-muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.product-tabs__list li {
+  margin-bottom: 10px;
+}
+
+.product-tabs__list li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .product-tabs__card {
+    padding: 22px 20px;
+  }
+}

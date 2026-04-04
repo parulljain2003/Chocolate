@@ -1,0 +1,62 @@
+.top-bar {
+  background: linear-gradient(90deg, #f5e6c8 0%, #fff9f0 50%, #f5e6c8 100%);
+  border-bottom: 1px solid var(--df-border);
+  font-size: 13px;
+  color: var(--df-brown-dark);
+}
+
+.top-bar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding: 8px 20px;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.top-bar__promo {
+  margin: 0;
+  font-weight: 500;
+}
+
+.top-bar__promo strong {
+  color: var(--df-cta);
+}
+
+.top-bar__links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.top-bar__links a {
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.85;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.top-bar__links a:hover {
+  opacity: 1;
+  color: var(--df-cta);
+}
+
+.top-bar__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--df-amber);
+  opacity: 0.6;
+}
+
+@media (max-width: 640px) {
+  .top-bar__links {
+    display: none;
+  }
+
+  .top-bar__inner {
+    justify-content: center;
+  }
+}
