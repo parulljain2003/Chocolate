@@ -29,17 +29,11 @@
   margin: -12px 0 -20px;
   flex: 1;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  scrollbar-color: var(--df-cta) transparent;
+  scrollbar-width: none;
 }
 
 .product-section__scroller::-webkit-scrollbar {
-  height: 6px;
-}
-
-.product-section__scroller::-webkit-scrollbar-thumb {
-  background: var(--df-cta);
-  border-radius: 999px;
+  display: none;
 }
 
 .product-section__arrow {

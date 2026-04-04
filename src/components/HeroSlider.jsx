@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import bannerPng from '@assest/banner.png'
 import './HeroSlider.css'
 
 const slides = [
@@ -7,32 +8,27 @@ const slides = [
     title: 'Golden Harvest Sale',
     subtitle: 'Up to 60% off + extra 10% off',
     code: 'GOLD10',
-    image: '/assets/hero-1.jpg',
+    image: bannerPng,
   },
   {
     id: 2,
     title: 'Premium Jumbo Nuts',
     subtitle: 'Rare crop, natural taste',
     code: 'JUMBO',
-    image: '/assets/hero-2.jpg',
+    image: bannerPng,
   },
   {
     id: 3,
     title: 'Dates & Berries',
     subtitle: 'Shop combos & save more',
     code: 'COMBO',
-    image: '/assets/hero-3.jpg',
+    image: bannerPng,
   },
 ]
 
 export default function HeroSlider() {
   const [index, setIndex] = useState(0)
   const [fade, setFade] = useState(true)
-  const [imgError, setImgError] = useState(false)
-
-  useEffect(() => {
-    setImgError(false)
-  }, [index])
 
   useEffect(() => {
     const t = setInterval(() => {
@@ -57,42 +53,19 @@ export default function HeroSlider() {
 
   return (
     <section className="hero-section container" aria-label="Promotions">
-      <div className={`hero-slider ${fade ? 'hero-slider--visible' : ''}`}>
+      <div
+        className={`hero-slider hero-slider--banner ${fade ? 'hero-slider--visible' : ''}`}
+      >
         <div className="hero-slider__bg" aria-hidden />
-        <div className="hero-slider__float hero-slider__float--1" aria-hidden>
-          🥜
-        </div>
-        <div className="hero-slider__float hero-slider__float--2" aria-hidden>
-          🌰
-        </div>
-        <div className="hero-slider__float hero-slider__float--3" aria-hidden>
-          🫘
-        </div>
-        <div className="hero-slider__float hero-slider__float--4" aria-hidden>
-          🍇
-        </div>
 
         <div className="hero-slider__grid">
           <div className="hero-slider__visual">
             <div className="hero-slider__image-wrap">
-              {!imgError && (
-                <img
-                  src={slide.image}
-                  alt=""
-                  className="hero-slider__image"
-                  onError={() => setImgError(true)}
-                />
-              )}
-              {imgError && (
-                <div className="hero-slider__image-fallback">
-                  <span className="hero-slider__fallback-icon" aria-hidden>
-                    🌰
-                  </span>
-                  <span>
-                    Add <code>hero-{slide.id}.jpg</code> to <code>public/assets/</code>
-                  </span>
-                </div>
-              )}
+              <img
+                src={slide.image}
+                alt=""
+                className="hero-slider__image"
+              />
             </div>
           </div>
           <div className="hero-slider__content">

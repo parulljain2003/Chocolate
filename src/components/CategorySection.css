@@ -28,18 +28,12 @@
   padding: 28px 8px 20px;
   margin: -28px 0 -20px;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  scrollbar-color: var(--df-gold) transparent;
+  scrollbar-width: none;
   flex: 1;
 }
 
 .category-section__scroller::-webkit-scrollbar {
-  height: 6px;
-}
-
-.category-section__scroller::-webkit-scrollbar-thumb {
-  background: var(--df-gold);
-  border-radius: 999px;
+  display: none;
 }
 
 .category-section__arrow {

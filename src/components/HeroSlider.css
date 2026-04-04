@@ -40,56 +40,6 @@
   pointer-events: none;
 }
 
-.hero-slider__float {
-  position: absolute;
-  z-index: 1;
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
-  opacity: 0.35;
-  filter: blur(0.3px);
-  animation: hero-float 5s ease-in-out infinite;
-  pointer-events: none;
-}
-
-.hero-slider__float--1 {
-  top: 12%;
-  left: 8%;
-  animation-delay: 0s;
-}
-
-.hero-slider__float--2 {
-  top: 22%;
-  right: 12%;
-  animation-delay: 0.8s;
-}
-
-.hero-slider__float--3 {
-  bottom: 28%;
-  left: 18%;
-  animation-delay: 1.4s;
-}
-
-.hero-slider__float--4 {
-  bottom: 18%;
-  right: 22%;
-  animation-delay: 2s;
-}
-
-@keyframes hero-float {
-  0%,
-  100% {
-    transform: translateY(0) rotate(-4deg) scale(1);
-  }
-  50% {
-    transform: translateY(-14px) rotate(4deg) scale(1.08);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-slider__float {
-    animation: none;
-  }
-}
-
 .hero-slider__grid {
   position: relative;
   z-index: 2;
@@ -122,34 +72,19 @@
   box-shadow: 0 24px 48px rgba(45, 30, 20, 0.35);
 }
 
-.hero-slider__image-fallback {
-  position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.25), rgba(61, 40, 23, 0.2));
-  border: 2px dashed rgba(255, 255, 255, 0.5);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  text-align: center;
-  padding: 16px;
-  color: var(--df-brown-dark);
-  font-size: 13px;
-  font-weight: 600;
+/* Wide promo banner asset */
+.hero-slider--banner .hero-slider__image-wrap {
+  width: min(100%, 540px);
+  aspect-ratio: 16 / 10;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.06);
 }
 
-.hero-slider__image-fallback code {
-  font-size: 12px;
-  background: rgba(255, 255, 255, 0.35);
-  padding: 2px 6px;
-  border-radius: 4px;
-}
-
-.hero-slider__fallback-icon {
-  font-size: 3rem;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+.hero-slider--banner .hero-slider__image {
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 20px 44px rgba(45, 30, 20, 0.28);
 }
 
 .hero-slider__content {
