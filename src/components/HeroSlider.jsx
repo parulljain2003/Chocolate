@@ -1,16 +1,33 @@
 import { useEffect, useState } from 'react';
-import banner2 from '@assest/banner-1.webp';
+import banner1 from '@assest/banner-1.webp';
+import banner3 from '@assest/banner-3.webp';
 import './HeroSlider.css';
 
 const slides = [
   {
     id: 1,
-    image: banner2,
+    image: banner1,
+    title: "Premium Cocoa Selection"
   },
+  {
+    id: 3,
+    image: banner3,
+    title: "Iconic Artisanal Treats"
+  }
 ];
 
 export default function HeroSlider() {
   const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (slides.length <= 1) return;
+    
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    
+    return () => clearInterval(timer);
+  }, []);
 
   const slide = slides[index];
 
@@ -20,7 +37,7 @@ export default function HeroSlider() {
         <div className="hero-slider__image-container">
           <img
             src={slide.image}
-            alt="Premium Chocolate Collection"
+            alt={slide.title}
             className="hero-slider__image"
           />
         </div>
