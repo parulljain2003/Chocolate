@@ -1,9 +1,9 @@
 import './AnnouncementBar.css'
 
 const messages = [
-  'PayDay Sale is LIVE — Extra 15% OFF sitewide!',
-  'Jumbo nuts — Extra 10% OFF this week',
-  'Free shipping above ₹1499',
+  'Sweet Indulgence Sale — Extra 15% OFF sitewide!',
+  'Artisanal Truffles — Extra 10% OFF this week',
+  'Free delivery on orders above ₹1499',
 ]
 
 export default function AnnouncementBar() {

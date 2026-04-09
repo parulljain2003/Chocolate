@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="site-footer__news-inner">
           <h2 className="site-footer__news-title">Subscribe for offers</h2>
           <p className="site-footer__news-text">
-            Get updates on seasonal harvests and member-only discounts.
+            Be the first to know about our limited edition releases and artisanal collections.
           </p>
           <form className="site-footer__form" onSubmit={(e) => e.preventDefault()}>
             <label className="visually-hidden" htmlFor="news-email">
@@ -28,12 +28,12 @@ export default function Footer() {
 
       <div className="site-footer__grid container">
         <div className="site-footer__col site-footer__brand-block">
-          <span className="site-footer__logo">Dry Delight</span>
-          <p className="site-footer__tagline">Premium nuts & dry fruits since 1926.</p>
+          <span className="site-footer__logo">Cocoa Delight</span>
+          <p className="site-footer__tagline">Crafting artisanal chocolates since 1926.</p>
           <div className="site-footer__contact">
             <p>📍 Noida, Uttar Pradesh 201307</p>
             <p>📞 +91-99710-95414</p>
-            <p>✉️ care@drydelight.example</p>
+            <p>✉️ indulge@cocodelight.example</p>
           </div>
         </div>
 
@@ -94,7 +94,7 @@ export default function Footer() {
 
       <div className="site-footer__bottom">
         <div className="container site-footer__bottom-inner">
-          <p>© {new Date().getFullYear()} Dry Delight. Demo storefront — not affiliated with Nutraj.</p>
+          <p>© {new Date().getFullYear()} Cocoa Delight. Demo storefront — not affiliated with any brand.</p>
           <p className="site-footer__fssai">FSSAI compliant processes · Quality assured</p>
         </div>
       </div>

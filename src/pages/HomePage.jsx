@@ -3,6 +3,8 @@ import FeaturedCarousel from '../components/FeaturedCarousel'
 import Footer from '../components/Footer'
 import HeroSlider from '../components/HeroSlider'
 import ProductCarousel from '../components/ProductCarousel'
+import BannerCarousel from '../components/BannerCarousel'
+import ReviewSection from '../components/ReviewSection'
 
 export default function HomePage() {
   return (
@@ -11,7 +13,9 @@ export default function HomePage() {
         <HeroSlider />
         <CategorySection />
         <FeaturedCarousel />
+        <BannerCarousel />
         <ProductCarousel />
+        <ReviewSection />
       </main>
       <Footer />
     </>

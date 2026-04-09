@@ -1,8 +1,8 @@
 import { useMemo, useState } from 'react'
-import walnutAvif from '@assest/walnut.avif'
+import chocolatePng from '@assest/product-1.png'
 import './ProductGallery.css'
 
-const defaultThumbs = Array.from({ length: 5 }, () => walnutAvif)
+const defaultThumbs = Array.from({ length: 5 }, () => chocolatePng)
 
 export default function ProductGallery({ images }) {
   const resolved = useMemo(
@@ -21,7 +21,7 @@ export default function ProductGallery({ images }) {
             <path d="m21 21-4.35-4.35" />
           </svg>
         </span>
-        <div className="product-gallery__brand">Dry Delight</div>
+        <div className="product-gallery__brand">Cocoa Delight</div>
         <div className="product-gallery__stage">
           <div className="product-gallery__zoom-wrap">
             <img src={mainSrc} alt="" className="product-gallery__img" />

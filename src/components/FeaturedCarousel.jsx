@@ -1,13 +1,13 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
-import productPng from '@assest/product.png'
+import productPng from '@assest/product-1.png'
 import './FeaturedCarousel.css'
 
 const items = [
-  { id: '1', title: 'Kitchen Essentials' },
-  { id: '2', title: 'Snack Rite' },
-  { id: '3', title: 'Anmol Premium' },
-  { id: '4', title: 'Bactopure' },
-  { id: '5', title: 'Daily Nutrition' },
+  { id: '1', title: 'Salted Dark' },
+  { id: '2', title: 'Ruby Berry' },
+  { id: '3', title: 'Almond Silk' },
+  { id: '4', title: 'Nutty Praline' },
+  { id: '5', title: 'Vanilla Bean' },
 ]
 
 export default function FeaturedCarousel() {
@@ -17,12 +17,14 @@ export default function FeaturedCarousel() {
 
   const scrollToIndex = useCallback((i, instant) => {
     const track = trackRef.current
-    const el = track?.children[i]
+    if (!track) return
+    const el = track.children[i]
     if (!el) return
-    el.scrollIntoView({
+
+    const scrollPos = el.offsetLeft - (track.offsetWidth - el.offsetWidth) / 2
+    track.scrollTo({
+      left: scrollPos,
       behavior: instant ? 'auto' : 'smooth',
-      inline: 'center',
-      block: 'nearest',
     })
   }, [])
 
@@ -39,7 +41,7 @@ export default function FeaturedCarousel() {
   }, [])
 
   const description =
-    'Unleash your inner chef with our premium recipe-ready range of pre-chopped dry fruits, nuts, and more — curated for modern kitchens in a warm golden palette.'
+    'Indulge in our exquisite collection of handcrafted artisanal chocolates, from intense dark single-origin bars to creamy sea-salt caramels, meticulously tempered for the perfect snap.'
 
   return (
     <section className="featured-section" aria-labelledby="featured-heading">

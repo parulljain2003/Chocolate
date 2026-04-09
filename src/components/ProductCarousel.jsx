@@ -1,73 +1,73 @@
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
-import walnutAvif from '@assest/walnut.avif'
+import chocolatePng from '@assest/product-1.png'
 import './ProductCarousel.css'
 
 const products = [
   {
     id: '1',
-    brand: 'Dry Delight Anmol',
-    title: 'Premium Medjool Dates 500gm',
+    brand: 'Cocoa Delight',
+    title: '70% Dark Himalayan Sea Salt Bar 100g',
     rating: '4.9',
-    mrp: 1579,
-    price: 856,
-    per100: 171,
-    off: 45,
+    mrp: 450,
+    price: 395,
+    per100: 395,
+    off: 12,
     badge: 'Premium',
   },
   {
     id: '2',
-    brand: 'Dry Delight Anmol',
-    title: 'Jumbo Walnut Kernel Natural 500gm',
+    brand: 'Cocoa Delight',
+    title: 'Belgian Milk Chocolate Hazelnut Praline',
     rating: '4.8',
-    mrp: 1499,
-    price: 972,
-    per100: 194,
-    off: 35,
-    badge: 'Premium',
-  },
-  {
-    id: '3',
-    brand: 'Dry Delight Anmol',
-    title: 'Jumbo Mamra Almonds 500gm',
-    rating: '5.0',
-    mrp: 3389,
-    price: 2737,
-    per100: 547,
-    off: 19,
-    badge: 'Premium',
-  },
-  {
-    id: '4',
-    brand: 'Dry Delight Anmol',
-    title: 'Jumbo Cashew W180 500gm',
-    rating: '4.8',
-    mrp: 1499,
-    price: 910,
-    per100: 182,
-    off: 39,
-    badge: 'Premium',
-  },
-  {
-    id: '5',
-    brand: 'Dry Delight',
-    title: 'Daily Needs Pack 1kg (Mixed)',
-    rating: '4.7',
-    mrp: 1656,
-    price: 1656,
-    per100: 166,
-    off: null,
+    mrp: 599,
+    price: 499,
+    per100: 499,
+    off: 16,
     badge: 'Bestseller',
   },
   {
-    id: '6',
-    brand: 'Snack Rite',
-    title: 'Roasted & Salted Cashew 150gm',
+    id: '3',
+    brand: 'Cocoa Delight',
+    title: 'Single Origin Madagascar Dark 85%',
+    rating: '5.0',
+    mrp: 650,
+    price: 550,
+    per100: 550,
+    off: 15,
+    badge: 'Limited',
+  },
+  {
+    id: '4',
+    brand: 'Cocoa Delight',
+    title: 'Ruby Chocolate with Dried Raspberries',
     rating: '4.8',
-    mrp: 738,
-    price: 395,
-    per100: 132,
-    off: 46,
+    mrp: 550,
+    price: 475,
+    per100: 475,
+    off: 13,
+    badge: 'New',
+  },
+  {
+    id: '5',
+    brand: 'Cocoa Delight',
+    title: 'Caramelised Pecan White Chocolate',
+    rating: '4.7',
+    mrp: 525,
+    price: 450,
+    per100: 450,
+    off: 14,
+    badge: 'Artisanal',
+  },
+  {
+    id: '6',
+    brand: 'Cocoa Delight',
+    title: 'Assorted Truffle Box - 12 Pieces',
+    rating: '4.9',
+    mrp: 1200,
+    price: 999,
+    per100: 999,
+    off: 16,
     badge: 'High demand',
   },
 ]
@@ -126,7 +126,7 @@ export default function ProductCarousel() {
                       </span>
                     )}
                     <img
-                      src={walnutAvif}
+                      src={chocolatePng}
                       alt=""
                       className="product-card__img"
                     />

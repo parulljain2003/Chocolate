@@ -6,7 +6,7 @@ export default function Header() {
     <header className="site-header">
       <div className="site-header__inner container">
         <Link to="/" className="site-header__logo">
-          <span className="site-header__brand">DRY DELIGHT</span>
+          <span className="site-header__brand">COCOA DELIGHT</span>
           <span className="site-header__tagline">Since 1926</span>
         </Link>
 
@@ -21,15 +21,15 @@ export default function Header() {
               defaultValue="all"
             >
               <option value="all">All Categories</option>
-              <option value="nuts">Nuts</option>
-              <option value="dates">Dates</option>
-              <option value="seeds">Seeds</option>
-              <option value="berries">Berries</option>
+              <option value="nuts">Dark Chocolate</option>
+              <option value="dates">Milk Chocolate</option>
+              <option value="seeds">White Chocolate</option>
+              <option value="berries">Ruby Chocolate</option>
             </select>
             <input
               id="search-q"
               type="search"
-              placeholder="Search for cashew, almond…"
+              placeholder="Search for truffles, dark chocolate…"
               className="site-header__input"
             />
             <button type="button" className="site-header__search-btn" aria-label="Search">

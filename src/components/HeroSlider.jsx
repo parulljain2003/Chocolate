@@ -1,84 +1,51 @@
-import { useEffect, useState } from 'react'
-import bannerPng from '@assest/banner.png'
-import './HeroSlider.css'
+import { useEffect, useState } from 'react';
+import banner2 from '@assest/banner-2.webp';
+import './HeroSlider.css';
 
 const slides = [
   {
     id: 1,
-    title: 'Golden Harvest Sale',
-    subtitle: 'Up to 60% off + extra 10% off',
-    code: 'GOLD10',
-    image: bannerPng,
+    image: banner2,
   },
-  {
-    id: 2,
-    title: 'Premium Jumbo Nuts',
-    subtitle: 'Rare crop, natural taste',
-    code: 'JUMBO',
-    image: bannerPng,
-  },
-  {
-    id: 3,
-    title: 'Dates & Berries',
-    subtitle: 'Shop combos & save more',
-    code: 'COMBO',
-    image: bannerPng,
-  },
-]
+];
 
 export default function HeroSlider() {
-  const [index, setIndex] = useState(0)
-  const [fade, setFade] = useState(true)
+  const [index, setIndex] = useState(0);
+  const [fade, setFade] = useState(true);
 
   useEffect(() => {
     const t = setInterval(() => {
-      setFade(false)
+      setFade(false);
       setTimeout(() => {
-        setIndex((i) => (i + 1) % slides.length)
-        setFade(true)
-      }, 280)
-    }, 5500)
-    return () => clearInterval(t)
-  }, [])
+        setIndex((i) => (i + 1) % slides.length);
+        setFade(true);
+      }, 280);
+    }, 5500);
+    return () => clearInterval(t);
+  }, []);
 
   const go = (i) => {
-    setFade(false)
+    setFade(false);
     setTimeout(() => {
-      setIndex(i)
-      setFade(true)
-    }, 200)
-  }
+      setIndex(i);
+      setFade(true);
+    }, 200);
+  };
 
-  const slide = slides[index]
+  const slide = slides[index];
 
   return (
-    <section className="hero-section container" aria-label="Promotions">
-      <div
-        className={`hero-slider hero-slider--banner ${fade ? 'hero-slider--visible' : ''}`}
-      >
-        <div className="hero-slider__bg" aria-hidden />
-
-        <div className="hero-slider__grid">
-          <div className="hero-slider__visual">
-            <div className="hero-slider__image-wrap">
-              <img
-                src={slide.image}
-                alt=""
-                className="hero-slider__image"
-              />
-            </div>
-          </div>
-          <div className="hero-slider__content">
-            <h2 className="hero-slider__title">{slide.title}</h2>
-            <p className="hero-slider__subtitle">{slide.subtitle}</p>
-            <p className="hero-slider__code">
-              Use code: <strong>{slide.code}</strong>
-            </p>
-            <a href="#products" className="hero-slider__cta">
-              Shop now
-            </a>
-          </div>
+    <section className="hero-section hero-section--fullscreen" aria-label="Main Banner">
+      <div className={`hero-slider ${fade ? 'hero-slider--visible' : ''}`}>
+        <div className="hero-slider__image-container">
+          <img
+            src={slide.image}
+            alt="Premium Chocolate Collection"
+            className="hero-slider__image"
+          />
         </div>
+        
+        <div className="hero-slider__overlay"></div>
 
         <div className="hero-slider__dots" role="tablist" aria-label="Slides">
           {slides.map((s, i) => (
@@ -95,5 +62,5 @@ export default function HeroSlider() {
         </div>
       </div>
     </section>
-  )
+  );
 }

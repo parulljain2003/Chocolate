@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
-import AnnouncementBar from './AnnouncementBar'
+// import AnnouncementBar from './AnnouncementBar'
 import Header from './Header'
-import NavBar from './NavBar'
+// import NavBar from './NavBar'
 import TopBar from './TopBar'
 import './Layout.css'
 
@@ -10,8 +10,8 @@ export default function Layout() {
     <div className="app">
       <TopBar />
       <Header />
-      <NavBar />
-      <AnnouncementBar />
+      {/* <NavBar /> */}
+      {/* <AnnouncementBar /> */}
       <Outlet />
     </div>
   )

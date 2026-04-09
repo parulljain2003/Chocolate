@@ -1,14 +1,14 @@
 import { useRef } from 'react'
-import categoryPng from '@assest/category.png'
+import categoryPng from '@assest/img-1.webp'
 import './CategorySection.css'
 
 const categories = [
-  { name: 'Almond', color: '#7d5a44' },
-  { name: 'Cashew', color: '#2d5a5c' },
-  { name: 'Pista', color: '#4a5c3a' },
-  { name: 'Raisin', color: '#a67c52' },
-  { name: 'Walnut', color: '#5c3540' },
-  { name: 'Dates', color: '#6b4c2e' },
+  { name: 'Dark Chocolate', color: '#7d5a44' },
+  { name: 'Milk Chocolate', color: '#2d5a5c' },
+  { name: 'White Chocolate', color: '#4a5c3a' },
+  { name: 'Ruby Chocolate', color: '#a67c52' },
+  { name: 'Couverture Chocolate', color: '#5c3540' },
+  { name: 'Organic Chocolate', color: '#6b4c2e' },
 ]
 
 export default function CategorySection() {

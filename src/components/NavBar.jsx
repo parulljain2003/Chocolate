@@ -2,14 +2,14 @@ import './NavBar.css'
 
 const items = [
   { icon: '🛒', label: 'Shop', href: '#shop' },
-  { icon: '🌟', label: 'Jumbo Nuts', href: '#jumbo' },
-  { icon: '💪', label: 'Snacking', href: '#snack' },
-  { icon: '🌴', label: 'Dates', href: '#dates' },
-  { icon: '🏷️', label: 'Combos', href: '#combos' },
-  { icon: '🌱', label: 'Seeds', href: '#seeds' },
-  { icon: '🍇', label: 'Berries', href: '#berries' },
-  { icon: '🌿', label: 'Spices', href: '#spices' },
-  { icon: '📦', label: 'Wholesale', href: '#wholesale' },
+  { icon: '🍫', label: 'Dark Bliss', href: '#dark' },
+  { icon: '🥛', label: 'Milk Silk', href: '#milk' },
+  { icon: '🍬', label: 'Truffles', href: '#truffles' },
+  { icon: '🎁', label: 'Gift Boxes', href: '#gift' },
+  { icon: '🤍', label: 'White Satin', href: '#white' },
+  { icon: '🍓', label: 'Ruby Berry', href: '#ruby' },
+  { icon: '☕', label: 'Hot Cocoa', href: '#cocoa' },
+  { icon: '📦', label: 'Bulk Orders', href: '#wholesale' },
   { icon: '📝', label: 'Blog', href: '#blog' },
 ]
 

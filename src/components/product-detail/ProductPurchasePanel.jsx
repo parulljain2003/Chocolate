@@ -17,7 +17,7 @@ export default function ProductPurchasePanel() {
 
   return (
     <div className="purchase-panel">
-      <h1 className="purchase-panel__title">Premium Jumbo Almond</h1>
+      <h1 className="purchase-panel__title">70% Dark Himalayan Sea Salt Bar</h1>
 
       <div className="purchase-panel__row">
         <label className="visually-hidden" htmlFor="weight-select">
@@ -39,8 +39,8 @@ export default function ProductPurchasePanel() {
       </div>
 
       <p className="purchase-panel__shipping">
-        Swift delivery — shipping across India. Bringing the goodness of dry fruits to your
-        doorstep, no matter where you are!{' '}
+        Artisanal delivery — shipping across India. Bringing the rich indulgence of premium chocolates to your
+        doorstep, meticulously packed to preserve freshness and texture!{' '}
         <a href="#support" className="purchase-panel__shipping-link">
           Chat with us
         </a>
@@ -54,7 +54,7 @@ export default function ProductPurchasePanel() {
               <path d="M12 11v-1" />
             </svg>
           </span>
-          <span className="purchase-panel__benefit-label">Healthy heart</span>
+          <span className="purchase-panel__benefit-label">Pure Cocoa</span>
         </div>
         <div className="purchase-panel__benefit">
           <span className="purchase-panel__benefit-icon" aria-hidden>
@@ -62,7 +62,7 @@ export default function ProductPurchasePanel() {
               <path d="M12 3c-4 4-8 6-8 11a4 4 0 0 0 8 0 4 4 0 0 0 8 0c0-5-4-7-8-11Z" />
             </svg>
           </span>
-          <span className="purchase-panel__benefit-label">High nutrition</span>
+          <span className="purchase-panel__benefit-label">70% Cocoa</span>
         </div>
         <div className="purchase-panel__benefit">
           <span className="purchase-panel__benefit-icon" aria-hidden>
@@ -71,7 +71,7 @@ export default function ProductPurchasePanel() {
               <path d="M2 19h20" strokeDasharray="2 3" />
             </svg>
           </span>
-          <span className="purchase-panel__benefit-label">Gluten free</span>
+          <span className="purchase-panel__benefit-label">Artisanal</span>
         </div>
         <div className="purchase-panel__benefit">
           <span className="purchase-panel__benefit-icon" aria-hidden>
@@ -80,7 +80,7 @@ export default function ProductPurchasePanel() {
               <path d="M8 12h8M12 8v8" strokeDasharray="2 2" opacity="0.5" />
             </svg>
           </span>
-          <span className="purchase-panel__benefit-label">Cholesterol care</span>
+          <span className="purchase-panel__benefit-label">Single Origin</span>
         </div>
       </div>
 
@@ -99,16 +99,16 @@ export default function ProductPurchasePanel() {
       </div>
 
       <p className="purchase-panel__sku">
-        <strong>SKU:</strong> DRYF101
+        <strong>SKU:</strong> CHOCO-DARK-01
       </p>
 
       <div className="purchase-panel__desc">
         <h2 className="purchase-panel__desc-title">Description</h2>
         <p>
-          Our Premium Jumbo Almonds are hand-sorted for size, crunch, and natural sweetness. Rich in
-          protein and good fats, they help keep you fuller for longer and fit beautifully into daily
-          bowls, baking, and gifting. Traditionally valued for oil and plant-based milk, they bring a
-          clean, buttery note to both sweet and savoury recipes.
+          Our 70% Dark Himalayan Sea Salt Bar is handcrafted with ethically sourced single-origin cocoa beans. 
+          Indulge in the perfect balance of intense cocoa and subtle hand-harvested sea salt crystals. 
+          Each bar is meticulously tempered to ensure a glossy finish and a clean snap, 
+          making it an ideal treat for the true chocolate connoisseur.
         </p>
       </div>
     </div>

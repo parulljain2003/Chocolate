@@ -16,7 +16,7 @@ export default function ProductDetailPage() {
             <span aria-hidden>/</span>
             <Link to="/#products">Shop</Link>
             <span aria-hidden>/</span>
-            <span className="product-page__crumb-current">Premium Jumbo Almond</span>
+            <span className="product-page__crumb-current">70% Dark Himalayan Sea Salt Bar</span>
           </nav>
 
           <div className="product-page__grid">
