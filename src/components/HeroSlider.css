@@ -123,11 +123,47 @@
 }
 
 @media (max-width: 768px) {
-  .hero-slider__dots {
-    bottom: 60px;
+  .hero-section--fullscreen {
+    height: auto;
+    min-height: 0;
   }
-  
+
+  .hero-slider {
+    aspect-ratio: 16 / 7; /* Adjust to match the aspect ratio of the 21:9 banner more closely on mobile */
+  }
+
+  .hero-slider__image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 7;
+  }
+
   .hero-slider__image {
-    object-position: 70% center; /* Adjust focus point for mobile */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: none !important;
+    animation: none !important; /* Disabling Ken Burns on mobile to prevent overflow issues */
+    object-position: center;
+  }
+
+  .hero-slider__dots {
+    bottom: 20px;
+    padding: 4px 10px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .hero-slider__dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .hero-slider__dot--active {
+    width: 16px;
+  }
+
+  .hero-slider::after {
+    height: 30px; /* Smaller wave on mobile */
   }
 }
