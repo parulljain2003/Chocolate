@@ -12,13 +12,8 @@
   width: 100%;
   height: 100%;
   position: relative;
-  opacity: 0;
-  transition: opacity 1.2s ease;
 }
 
-.hero-slider--visible {
-  opacity: 1;
-}
 
 .hero-slider__image-container {
   width: 100%;
@@ -33,24 +28,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(1.1); /* Slightly zoomed out starting point */
 }
 
-/* Cinematic Ken Burns Effect */
-.hero-slider--visible .hero-slider__image {
-  animation: kenBurns 20s ease-in-out infinite alternate;
-}
-
-@keyframes kenBurns {
-  0% {
-    transform: scale(1);
-    filter: brightness(1);
-  }
-  100% {
-    transform: scale(1.15);
-    filter: brightness(0.9);
-  }
-}
 
 .hero-slider__overlay {
   position: absolute;
