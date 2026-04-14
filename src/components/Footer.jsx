@@ -28,7 +28,7 @@ export default function Footer() {
 
       <div className="site-footer__grid container">
         <div className="site-footer__col site-footer__brand-block">
-          <span className="site-footer__logo">Cocoa Delight</span>
+          <span className="site-footer__logo">VYOM BLISS</span>
           <p className="site-footer__tagline">Crafting artisanal chocolates since 1926.</p>
           <div className="site-footer__contact">
             <p>📍 Noida, Uttar Pradesh 201307</p>
@@ -94,7 +94,7 @@ export default function Footer() {
 
       <div className="site-footer__bottom">
         <div className="container site-footer__bottom-inner">
-          <p>© {new Date().getFullYear()} Cocoa Delight. Demo storefront — not affiliated with any brand.</p>
+          <p>© {new Date().getFullYear()} VYOM BLISS. Demo storefront — not affiliated with any brand.</p>
           <p className="site-footer__fssai">FSSAI compliant processes · Quality assured</p>
         </div>
       </div>

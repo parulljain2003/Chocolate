@@ -21,7 +21,7 @@ export default function ProductGallery({ images }) {
             <path d="m21 21-4.35-4.35" />
           </svg>
         </span>
-        <div className="product-gallery__brand">Cocoa Delight</div>
+        <div className="product-gallery__brand">VYOM BLISS</div>
         <div className="product-gallery__stage">
           <div className="product-gallery__zoom-wrap">
             <img src={mainSrc} alt="" className="product-gallery__img" />
