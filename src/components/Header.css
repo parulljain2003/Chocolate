@@ -2,6 +2,7 @@
   background: var(--df-paper);
   padding: 16px 0;
   box-shadow: 0 1px 0 var(--df-border);
+
 }
 
 .site-header__inner {
@@ -21,12 +22,13 @@
   flex-direction: row;
   align-items: center;
   gap: 12px;
-  min-width: 140px;
+  min-width: auto;
 }
 
 .site-header__logo-img {
-  width: 48px;
-  height: 48px;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
   object-fit: contain;
 }
 
@@ -34,9 +36,9 @@
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   letter-spacing: 0.04em;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 .site-header__tagline {
