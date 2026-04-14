@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import banner1 from '@assest/banner-2.webp';
-import banner2 from '@assest/banner-1.webp';
-import banner3 from '@assest/banner-3.webp';
-
-
+import banner1 from '../../assest/banner-1.webp';
 import './BannerCarousel.css';
 
 const banners = [
   { id: 1, image: banner1 },
-  { id: 2, image: banner2 },
-  { id: 3, image: banner3 },
+  { id: 2, image: banner1 },
+  { id: 3, image: banner1 },
 ];
 
 export default function BannerCarousel() {

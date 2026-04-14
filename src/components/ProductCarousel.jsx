@@ -1,12 +1,12 @@
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
-import chocolatePng from '@assest/product-1.png'
+import chocolatePng from '@assest/pct-3.png' 
 import './ProductCarousel.css'
 
 const products = [
   {
     id: '1',
-    brand: 'Cocoa Delight',
+    brand: 'VYOM BLISS',
     title: '70% Dark Himalayan Sea Salt Bar 100g',
     rating: '4.9',
     mrp: 450,
@@ -17,7 +17,7 @@ const products = [
   },
   {
     id: '2',
-    brand: 'Cocoa Delight',
+    brand: 'VYOM BLISS',
     title: 'Belgian Milk Chocolate Hazelnut Praline',
     rating: '4.8',
     mrp: 599,
@@ -28,7 +28,7 @@ const products = [
   },
   {
     id: '3',
-    brand: 'Cocoa Delight',
+    brand: 'VYOM BLISS',
     title: 'Single Origin Madagascar Dark 85%',
     rating: '5.0',
     mrp: 650,
@@ -39,7 +39,7 @@ const products = [
   },
   {
     id: '4',
-    brand: 'Cocoa Delight',
+    brand: 'VYOM BLISS',
     title: 'Ruby Chocolate with Dried Raspberries',
     rating: '4.8',
     mrp: 550,
@@ -50,7 +50,7 @@ const products = [
   },
   {
     id: '5',
-    brand: 'Cocoa Delight',
+    brand: 'VYOM BLISS',
     title: 'Caramelised Pecan White Chocolate',
     rating: '4.7',
     mrp: 525,
@@ -61,7 +61,7 @@ const products = [
   },
   {
     id: '6',
-    brand: 'Cocoa Delight',
+    brand: 'VYOM BLISS',
     title: 'Assorted Truffle Box - 12 Pieces',
     rating: '4.9',
     mrp: 1200,

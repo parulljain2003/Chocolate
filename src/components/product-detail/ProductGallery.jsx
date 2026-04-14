@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import chocolatePng from '@assest/product-1.png'
+import chocolatePng from '@assest/pct-3.png'
 import './ProductGallery.css'
 
 const defaultThumbs = Array.from({ length: 5 }, () => chocolatePng)

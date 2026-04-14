@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import logoImg from '@assest/logo.png'
 import './Header.css'
 
 export default function Header() {
@@ -6,8 +7,9 @@ export default function Header() {
     <header className="site-header">
       <div className="site-header__inner container">
         <Link to="/" className="site-header__logo">
-          <span className="site-header__brand">COCOA DELIGHT</span>
-          <span className="site-header__tagline">Since 1926</span>
+          <img src={logoImg} alt="Vyom Bliss" className="site-header__logo-img" />
+          <span className="site-header__brand">VYOM BLISS</span>
+          {/* <span className="site-header__tagline">Since 1926</span> */}
         </Link>
 
         <div className="site-header__search" role="search">

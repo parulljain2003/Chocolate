@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
-import productPng from '@assest/product-1.png'
+import productPng from '@assest/pct--2.jpeg'
 import './FeaturedCarousel.css'
 
 const items = [

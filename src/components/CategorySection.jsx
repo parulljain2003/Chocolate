@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import categoryPng from '@assest/img-1.webp'
+import categoryPng from '@assest/pct.png'
 import './CategorySection.css'
 
 const categories = [
